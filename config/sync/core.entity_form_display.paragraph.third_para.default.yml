@@ -1,0 +1,27 @@
+uuid: d08537de-3a05-4dcd-aeb6-353783cec4a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.third_para.field_body
+    - paragraphs.paragraphs_type.third_para
+  module:
+    - text
+id: paragraph.third_para.default
+targetEntityType: paragraph
+bundle: third_para
+mode: default
+content:
+  field_body:
+    type: text_textarea_with_summary
+    weight: 0
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

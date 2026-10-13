@@ -1,0 +1,30 @@
+uuid: 72017b09-0fb7-44da-baf3-fd8620f1a75e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.para.field_3rd_para
+    - node.type.para
+  module:
+    - entity_reference_revisions
+    - user
+id: node.para.default
+targetEntityType: node
+bundle: para
+mode: default
+content:
+  field_3rd_para:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,5 @@
+administer student admissions:
+  title: 'Administer student admissions'
+  description: 'View student admission submissions.'
+  restrict access: true
+

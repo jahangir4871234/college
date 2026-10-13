@@ -1,0 +1,6 @@
+name: Student Admission
+type: module
+description: Provides a student admissions landing page, application form, and submission management.
+package: Custom
+core_version_requirement: ^10 || ^11
+

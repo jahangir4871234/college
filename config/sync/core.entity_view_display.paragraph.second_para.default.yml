@@ -1,0 +1,24 @@
+uuid: 780eac2e-32ca-414b-b181-afc8edc3b304
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.second_para.field_3rd_para
+    - paragraphs.paragraphs_type.second_para
+  module:
+    - entity_reference_revisions
+id: paragraph.second_para.default
+targetEntityType: paragraph
+bundle: second_para
+mode: default
+content:
+  field_3rd_para:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,5 @@
+admission_page:
+  css:
+    theme:
+      css/student-admission.css: {}
+

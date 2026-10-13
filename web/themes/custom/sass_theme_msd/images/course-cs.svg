@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" width="600" height="375" role="img" aria-label="Computer Science program">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E2A1E"/>
+      <stop offset="55%" stop-color="#14573A"/>
+      <stop offset="100%" stop-color="#1B8354"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="375" fill="url(#bg)"/>
+  <rect width="600" height="375" fill="url(#grid)"/>
+  <g fill="none" stroke="rgba(255,255,255,.28)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="150" y="128" width="300" height="180" rx="14"/>
+    <path d="M120 130h360"/>
+  </g>
+  <g stroke="rgba(255,255,255,.75)" stroke-width="7" stroke-linecap="round">
+    <path d="M196 176h44"/><path d="M256 176h44"/><path d="M316 176h44"/>
+    <path d="M196 216h44"/><path d="M256 216h44"/><path d="M316 216h24"/>
+    <path d="M196 256h30"/><path d="M242 256h44"/><path d="M302 256h24"/>
+  </g>
+  <circle cx="470" cy="96" r="30" fill="rgba(255,255,255,.1)"/>
+  <circle cx="470" cy="96" r="14" fill="rgba(255,255,255,.22)"/>
+</svg>

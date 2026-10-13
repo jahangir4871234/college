@@ -1,0 +1,42 @@
+# Composer-managed dependencies.
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Drupal runtime files and environment-specific settings.
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/settings.ddev.php
+/web/sites/*/services.yml
+/web/sites/simpletest/
+
+# Contains environment-specific mail credentials.
+/config/sync/smtp.settings.yml
+
+# Front-end dependencies and generated caches.
+**/node_modules/
+.sass-cache/
+.stylelintcache
+
+# Local environment and editor files.
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.sql
+*.sql.gz
+*.tar.gz
+
+# Test and tooling output.
+.phpunit.result.cache
+/phpunit.xml
+/build/
+/coverage/

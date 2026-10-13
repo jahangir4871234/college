@@ -1,0 +1,13 @@
+student_admission.admin:
+  title: 'Student admissions'
+  description: 'Review submitted student applications.'
+  route_name: student_admission.admin
+  parent: system.admin_content
+  weight: 20
+
+student_admission.main:
+  title: 'Admissions'
+  description: 'Apply for student admission.'
+  route_name: student_admission.page
+  menu_name: main
+  weight: 10

@@ -1,0 +1,37 @@
+uuid: 1a3b34f6-aea3-4255-9ac0-c4316adde010
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_3rd_para
+    - paragraphs.paragraphs_type.second_para
+    - paragraphs.paragraphs_type.third_para
+  module:
+    - entity_reference_revisions
+id: paragraph.second_para.field_3rd_para
+field_name: field_3rd_para
+entity_type: paragraph
+bundle: second_para
+label: '3rd para'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      third_para: third_para
+    negate: 0
+    target_bundles_drag_drop:
+      hero_para:
+        weight: 4
+        enabled: false
+      second_para:
+        weight: 5
+        enabled: false
+      third_para:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

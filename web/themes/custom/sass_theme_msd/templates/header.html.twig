@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Shared site header (branding, main navigation, mobile toggle).
+ */
+#}
+<header id="header" class="header" role="banner">
+  <div class="container">
+    <div class="header_wrapper">
+      <div class="header__branding">
+        {% if page.header %}
+          {{ page.header }}
+        {% endif %}
+        {% if page.menubar %}
+          {{ page.menubar }}
+        {% endif %}
+      </div>
+      {% if page.primary_menu %}
+        <nav class="header__nav" aria-label="{{ 'Main navigation'|t }}">
+          {{ page.primary_menu }}
+        </nav>
+      {% endif %}
+      <button class="menu-toggle" aria-label="{{ 'Toggle navigation'|t }}" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>

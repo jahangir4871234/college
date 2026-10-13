@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $bg-canvas;
+  color: $text-primary;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  color: $white;
+  background: $green-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  transition: color 0.2s $ease;
+}
+
+:focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+// Consistent section rhythm
+.section {
+  padding-block: $space-80;
+  position: relative;
+
+  @include tablet {
+    padding-block: $space-96;
+  }
+
+  @include desktop {
+    padding-block: 120px;
+  }
+}
+
+// Section eyebrow label
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-8;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: $space-16;
+
+  &::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: $accent;
+    border-radius: 2px;
+  }
+}
+
+.section-head .eyebrow {
+  display: flex;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+// Gradient hairline divider
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    $border-default 20%,
+    $border-default 80%,
+    transparent
+  );
+  border: 0;
+}
+
+
+.hide-on-mobile {
+  display: none !important;
+
+  @include tablet {
+    display: block !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-desktop {
+  display: block !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+  display: block !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-moblie {
+  display: none !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+
+.success-message.message-body {
+  display: none;
+}
+
+
+.hide-this-text {
+  display: none;
+}

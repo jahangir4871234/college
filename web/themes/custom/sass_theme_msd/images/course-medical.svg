@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" width="600" height="375" role="img" aria-label="Medical Sciences program">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1F17"/>
+      <stop offset="100%" stop-color="#1B8354"/>
+    </linearGradient>
+    <pattern id="grid3" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="375" fill="url(#bg3)"/>
+  <rect width="600" height="375" fill="url(#grid3)"/>
+  <g fill="none" stroke="rgba(255,255,255,.22)" stroke-width="3">
+    <circle cx="300" cy="188" r="118"/>
+    <circle cx="300" cy="188" r="78"/>
+  </g>
+  <g fill="rgba(255,255,255,.92)">
+    <rect x="278" y="118" width="44" height="140" rx="10"/>
+    <rect x="230" y="166" width="140" height="44" rx="10"/>
+  </g>
+  <g fill="none" stroke="#0A1F17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".5">
+    <path d="M258 200h30M300 258v30M312 200h30M300 168v30"/>
+  </g>
+</svg>

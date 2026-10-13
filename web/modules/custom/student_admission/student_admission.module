@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Student Admission module hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function student_admission_theme(): array {
+  return [
+    'student_admission_page' => [
+      'variables' => [
+        'form' => NULL,
+      ],
+      'template' => 'student-admission-page',
+    ],
+  ];
+}
+

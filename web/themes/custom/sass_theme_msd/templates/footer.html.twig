@@ -1,0 +1,81 @@
+{#
+/**
+ * @file
+ * Shared site footer.
+ */
+#}
+<footer class="site-footer" role="contentinfo">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="/themes/custom/sass_theme_msd/logo.svg" alt="" width="36" height="36">
+            <span>Our College</span>
+          </div>
+          <p class="footer__desc">Empowering minds and shaping futures since 1965. Join a community of learners building what comes next.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.9 22H2.8l7.5-8.6L2.4 2h6.6l4.5 6.7L18.9 2zm-1.1 18h1.8L7.3 3.9H5.4L17.8 20z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.9-.5-5.8a3 3 0 0 0-2.1-2.1C18.5 3.6 12 3.6 12 3.6s-6.5 0-8.4.5A3 3 0 0 0 1.5 6.2C1 8.1 1 12 1 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5a3 3 0 0 0 2.1-2.1C23 15.9 23 12 23 12zM9.8 15.5v-7l6.2 3.5-6.2 3.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__heading">{{ 'Quick Links'|t }}</h3>
+          <ul>
+            <li><a href="#about">{{ 'About Us'|t }}</a></li>
+            <li><a href="#features">{{ 'Why Our College'|t }}</a></li>
+            <li><a href="#courses">{{ 'Courses'|t }}</a></li>
+            <li><a href="#contact">{{ 'Contact'|t }}</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__heading">{{ 'Programs'|t }}</h3>
+          <ul>
+            <li><a href="#courses">{{ 'Undergraduate'|t }}</a></li>
+            <li><a href="#courses">{{ 'Postgraduate'|t }}</a></li>
+            <li><a href="#courses">{{ 'PhD Programs'|t }}</a></li>
+            <li><a href="#courses">{{ 'Online Learning'|t }}</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h3 class="footer__heading">{{ 'Get in Touch'|t }}</h3>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>123 College Road, Education City</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <a href="tel:+12345678900">+1 (234) 567-8900</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <a href="mailto:info@ourcollege.edu">info@ourcollege.edu</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; {{ 'now'|date('Y') }} Our College. {{ 'All rights reserved.'|t }}</p>
+      <p><a href="#">{{ 'Privacy Policy'|t }}</a> &middot; <a href="#">{{ 'Terms of Use'|t }}</a></p>
+    </div>
+  </div>
+</footer>

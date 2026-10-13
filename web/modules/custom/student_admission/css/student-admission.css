@@ -1,0 +1,63 @@
+.path-student-admission .block-page-title-block{display:none}
+.path-student-admission #content>.section{padding:0}
+.admission-page{--admission-green:#1b8354;--admission-light:#20a66b;--admission-bg:#07090b;--admission-surface:#10151b;--admission-raised:#171d25;--admission-border:rgba(255,255,255,.1);--admission-text:#f2f5f7;--admission-muted:rgba(242,245,247,.68);color:var(--admission-text);background:var(--admission-bg)}
+.admission-container{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.admission-hero{position:relative;overflow:hidden;padding:180px 0 100px;background:radial-gradient(circle at 76% 34%,rgba(27,131,84,.25),transparent 27%),linear-gradient(135deg,#07090b 0%,#09130f 100%)}
+.admission-hero:after{position:absolute;right:-140px;bottom:-260px;width:600px;height:600px;border:1px solid rgba(255,255,255,.07);border-radius:50%;content:""}
+.admission-hero__grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(340px,.85fr);gap:100px;align-items:center}
+.admission-eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:20px;color:var(--admission-light);font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.admission-eyebrow:before{width:30px;height:2px;background:currentColor;content:""}
+.admission-hero h1{max-width:720px;margin:0 0 28px;font-size:clamp(48px,6.5vw,86px);font-weight:700;line-height:1.02;letter-spacing:-.045em}
+.admission-hero h1 em{color:var(--admission-light);font-style:normal}
+.admission-hero__content>p{max-width:650px;margin:0 0 38px;color:var(--admission-muted);font-size:18px;line-height:1.75}
+.admission-button{display:inline-flex;align-items:center;gap:12px;padding:15px 25px;color:#fff!important;background:linear-gradient(135deg,var(--admission-light),var(--admission-green));border:1px solid transparent;border-radius:999px;font-size:15px;font-weight:700;text-decoration:none!important;box-shadow:0 14px 34px rgba(27,131,84,.24);transition:transform .25s ease,box-shadow .25s ease}
+.admission-button:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(27,131,84,.34)}
+.admission-hero__panel{padding:38px;background:rgba(16,21,27,.8);border:1px solid var(--admission-border);border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.35);backdrop-filter:blur(16px)}
+.admission-hero__panel-label{margin:0 0 7px;color:var(--admission-light);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.admission-hero__panel>strong{display:block;margin-bottom:30px;font-size:28px}
+.admission-hero__panel ul{display:grid;gap:0;margin:0;padding:0;list-style:none}
+.admission-hero__panel li{display:flex;align-items:center;gap:16px;padding:18px 0;color:var(--admission-muted);border-top:1px solid var(--admission-border);font-size:14px}
+.admission-hero__panel li span{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;color:var(--admission-light);background:rgba(27,131,84,.14);border-radius:50%;font-size:11px;font-weight:700}
+.admission-benefits{position:relative;z-index:2;background:linear-gradient(135deg,#115d3b,#1b8354)}
+.admission-benefits__grid{display:grid;grid-template-columns:repeat(4,1fr);padding-block:34px}
+.admission-benefits__grid div{display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+.admission-benefits__grid div:not(:last-child){border-right:1px solid rgba(255,255,255,.2)}
+.admission-benefits strong{font-size:30px;letter-spacing:-.03em}
+.admission-benefits span{color:rgba(255,255,255,.72);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.admission-apply{padding:120px 0;background:radial-gradient(circle at 8% 20%,rgba(27,131,84,.09),transparent 30%),var(--admission-bg)}
+.admission-apply__grid{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:90px;align-items:start}
+.admission-guide{position:sticky;top:120px}
+.admission-guide h2{margin:0 0 20px;font-size:clamp(34px,4vw,52px);line-height:1.12;letter-spacing:-.035em}
+.admission-guide>p{margin:0;color:var(--admission-muted);font-size:16px;line-height:1.8}
+.admission-guide__note{display:flex;gap:14px;margin-top:36px;padding-top:28px;border-top:1px solid var(--admission-border)}
+.admission-guide__note>span{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;color:var(--admission-light);background:rgba(27,131,84,.14);border-radius:50%;font-weight:700}
+.admission-guide__note strong{display:block;margin-bottom:4px}
+.admission-guide__note p{margin:0;color:var(--admission-muted);font-size:13px;line-height:1.65}
+.admission-guide__note a{color:var(--admission-light);text-decoration:none}
+.admission-form-card{padding:42px;background:linear-gradient(155deg,var(--admission-raised),var(--admission-surface));border:1px solid var(--admission-border);border-radius:24px;box-shadow:0 28px 70px rgba(0,0,0,.28)}
+.admission-form__section+.admission-form__section{margin-top:42px;padding-top:38px;border-top:1px solid var(--admission-border)}
+.admission-form__heading{display:flex;align-items:flex-start;gap:16px;margin-bottom:28px}
+.admission-form__heading>span{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;color:var(--admission-light);background:rgba(27,131,84,.14);border-radius:50%;font-size:11px;font-weight:700}
+.admission-form__heading h2{margin:0 0 4px;font-size:22px;line-height:1.25}
+.admission-form__heading p{margin:0;color:var(--admission-muted);font-size:13px}
+.admission-form__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.admission-form__grid>.form-item:last-child{grid-column:1/-1}
+.admission-form .form-item{margin:0}
+.admission-form label{display:block;margin-bottom:8px;color:rgba(242,245,247,.82);font-size:13px;font-weight:600}
+.admission-form input:not([type=checkbox]),.admission-form select,.admission-form textarea{width:100%;padding:13px 15px;color:var(--admission-text);background:#0d1217;border:1px solid var(--admission-border);border-radius:9px;font:inherit;transition:border-color .2s ease,box-shadow .2s ease}
+.admission-form input:focus,.admission-form select:focus,.admission-form textarea:focus{outline:0;border-color:var(--admission-green);box-shadow:0 0 0 3px rgba(27,131,84,.16)}
+.admission-form select{color-scheme:dark}
+.admission-form textarea{min-height:120px;resize:vertical}
+.admission-form .description{margin-top:6px;color:rgba(242,245,247,.45);font-size:11px}
+.admission-form>.form-item-consent{margin:30px 0 0}
+.admission-form>.form-item-consent label{display:inline;margin-left:8px;color:var(--admission-muted);font-weight:400;line-height:1.55}
+.admission-form .form-actions{margin:28px 0 0}
+.admission-form__submit{width:100%;padding:15px 24px!important;color:#fff!important;background:linear-gradient(135deg,var(--admission-light),var(--admission-green))!important;border:0!important;border-radius:999px!important;font-weight:700!important;cursor:pointer}
+.admission-form .form-item--error-message{margin-top:6px;color:#ff9b9b;font-size:12px}
+.admission-success{text-align:center;padding:48px 20px}
+.admission-success__icon{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 20px;color:#fff;background:var(--admission-green);border-radius:50%;font-size:26px}
+.admission-success h2{margin:0 0 12px;font-size:30px}
+.admission-success p{color:var(--admission-muted)}
+.admission-success__reference{margin-top:24px;padding:14px;background:#0d1217;border:1px solid var(--admission-border);border-radius:9px}
+@media(max-width:900px){.admission-hero{padding-top:150px}.admission-hero__grid,.admission-apply__grid{grid-template-columns:1fr;gap:54px}.admission-guide{position:static}.admission-hero__panel{max-width:620px}.admission-apply{padding:90px 0}}
+@media(max-width:640px){.admission-container{width:min(100% - 32px,1180px)}.admission-hero{padding:130px 0 72px}.admission-hero h1{font-size:44px}.admission-hero__content>p{font-size:16px}.admission-hero__panel,.admission-form-card{padding:26px;border-radius:18px}.admission-benefits__grid{grid-template-columns:repeat(2,1fr);gap:24px 0}.admission-benefits__grid div:nth-child(2){border-right:0}.admission-benefits__grid div:nth-child(-n+2){padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.2)}.admission-form__grid{grid-template-columns:1fr;gap:18px}.admission-form__grid>.form-item:last-child{grid-column:auto}.admission-apply{padding:72px 0}}

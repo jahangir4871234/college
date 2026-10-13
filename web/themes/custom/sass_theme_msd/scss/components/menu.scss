@@ -1,0 +1,397 @@
+// ============================================
+// HEADER & NAVIGATION - FIXED
+// ============================================
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background: rgba(7, 9, 11, 0.84);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+
+  // Ensure header respects container
+  .container {
+    width: 100%;
+  }
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $space-16 0;
+  gap: $space-24;
+  min-height: 78px;
+
+  @include tablet {
+    min-height: 82px;
+  }
+}
+
+// Branding block (site logo + name)
+.region--header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  .block-system-branding-block,
+  #block-sass-theme-msd-site-branding {
+    display: flex;
+    align-items: center;
+    gap: $space-12;
+  }
+
+  // Drupal core branding block (actual markup: <div id="block-sass-theme-msd-site-branding"><a><img></a><a>College</a></div>)
+  #block-sass-theme-msd-site-branding {
+    gap: $space-12;
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: inline-flex;
+      align-items: center;
+    }
+    a:first-child {
+      // logo link
+      img {
+        height: 46px;
+        width: auto;
+        max-width: 160px;
+        object-fit: contain;
+        display: block;
+        @include tablet {
+          height: 50px;
+        }
+      }
+    }
+    // site name link (second <a>)
+    a:last-child {
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  // Drupal branding markup (if template uses .site-branding wrapper)
+  .site-branding {
+    display: flex;
+    align-items: center;
+    gap: $space-12;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: $space-12;
+    }
+
+    img {
+      height: 42px;
+      width: auto;
+      max-width: 160px;
+      object-fit: contain;
+      filter: brightness(1);
+
+      @include tablet {
+        height: 46px;
+      }
+    }
+
+    &__name {
+      a {
+        color: $white;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+      color: $white;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    &__slogan {
+      display: none;
+      color: rgba(255,255,255,0.55);
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 2px;
+      @include tablet {
+        display: block;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .site-name {
+    a {
+      color: $white;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .block {
+    margin: 0;
+  }
+}
+
+// Header branding wrapper (new template)
+.header__branding {
+  display: flex;
+  align-items: center;
+  gap: $space-12;
+  flex-shrink: 0;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  @media (max-width: 991px) {
+    // nav container is static, menu-items does absolute positioning
+    margin-left: 0;
+  }
+}
+
+.region--primary_menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+// Main menu - horizontal
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: $space-32;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  // Hide on mobile, show via toggle
+  @media (max-width: 991px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: $space-16 $space-25;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+    &.is-open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    @include tablet {
+      padding: $space-16 $space-50;
+    }
+  }
+}
+
+.menu-item {
+  list-style: none;
+  position: relative;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(255,255,255,0.78);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    padding: $space-8 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+
+    &:hover {
+      color: $white;
+      border-bottom-color: rgba(255,255,255,0.25);
+    }
+
+    &.is-active,
+    &.is-active-trail {
+      color: $white;
+      border-bottom-color: $green-primary;
+    }
+
+    @media (max-width: 991px) {
+      padding: $space-12 0;
+      width: 100%;
+      font-size: 16px;
+      border-bottom: none;
+      border-left: 2px solid transparent;
+      padding-left: $space-12;
+
+      &:hover {
+        border-bottom-color: transparent;
+        border-left-color: rgba(255,255,255,0.25);
+        padding-left: $space-16;
+      }
+
+      &.is-active {
+        border-left-color: $green-primary;
+        color: $white;
+      }
+    }
+  }
+
+  // Dropdown support
+  .menu-items {
+    // second level
+    @media (min-width: 992px) {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      flex-direction: column;
+      gap: 0;
+      background: #1a1a1a;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: $space-8 0;
+      min-width: 200px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &:hover > .menu-items {
+    @media (min-width: 992px) {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+
+  // Indicator for children
+  &[child="yes"] > a::after {
+    content: "▾";
+    font-size: 10px;
+    margin-left: 6px;
+    opacity: 0.6;
+    transition: transform 0.2s;
+
+    @media (max-width: 991px) {
+      margin-left: auto;
+    }
+  }
+
+  &[child="yes"]:hover > a::after {
+    transform: rotate(180deg);
+  }
+}
+
+// Hamburger toggle button
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.2);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $green-primary;
+    outline-offset: 2px;
+  }
+
+  // Hamburger lines
+  &__icon {
+    position: relative;
+    width: 20px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: $white;
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+      transform-origin: center;
+    }
+  }
+
+  &.is-open {
+    .menu-toggle__icon span:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+    .menu-toggle__icon span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .menu-toggle__icon span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+// Ensure header inner layout works when primary_menu is sibling
+#header .header_wrapper + .region--primary_menu {
+  // when menu rendered outside wrapper (legacy placement)
+  display: none;
+}
+
+// When menu is inside header_wrapper, show properly
+.header_wrapper .region--primary_menu {
+  @media (max-width: 991px) {
+    // keep absolute positioning handled by .menu-items itself
+    position: static;
+  }
+}
+
+// Accessibility: skip link offset for sticky header
+#main-content:focus {
+  scroll-margin-top: 80px;
+}

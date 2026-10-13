@@ -1,0 +1,16 @@
+student_admission.page:
+  path: '/student-admission'
+  defaults:
+    _controller: '\Drupal\student_admission\Controller\AdmissionController::page'
+    _title: 'Student Admission'
+  requirements:
+    _permission: 'access content'
+
+student_admission.admin:
+  path: '/admin/content/student-admissions'
+  defaults:
+    _controller: '\Drupal\student_admission\Controller\AdmissionAdminController::listing'
+    _title: 'Student admissions'
+  requirements:
+    _permission: 'administer student admissions'
+

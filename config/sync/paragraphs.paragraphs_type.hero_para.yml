@@ -1,0 +1,10 @@
+uuid: ecba6894-ec01-47f6-9127-f8f0a956d50e
+langcode: en
+status: true
+dependencies: {  }
+id: hero_para
+label: 'hero para'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

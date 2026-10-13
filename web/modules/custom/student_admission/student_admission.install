@@ -1,0 +1,94 @@
+<?php
+
+/**
+ * @file
+ * Install and update hooks for the Student Admission module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function student_admission_schema(): array {
+  $schema['student_admission_application'] = [
+    'description' => 'Stores student admission applications.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'reference' => [
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+      ],
+      'first_name' => [
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ],
+      'last_name' => [
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 254,
+        'not null' => TRUE,
+      ],
+      'phone' => [
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+      ],
+      'date_of_birth' => [
+        'type' => 'varchar',
+        'length' => 10,
+        'not null' => TRUE,
+      ],
+      'program' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+      ],
+      'qualification' => [
+        'type' => 'varchar',
+        'length' => 160,
+        'not null' => TRUE,
+      ],
+      'percentage' => [
+        'type' => 'numeric',
+        'precision' => 5,
+        'scale' => 2,
+        'not null' => FALSE,
+      ],
+      'message' => [
+        'type' => 'text',
+        'size' => 'big',
+        'not null' => FALSE,
+      ],
+      'status' => [
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => 'new',
+      ],
+      'created' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+    'unique keys' => [
+      'reference' => ['reference'],
+    ],
+    'indexes' => [
+      'created' => ['created'],
+      'email' => ['email'],
+      'status' => ['status'],
+    ],
+  ];
+
+  return $schema;
+}
+

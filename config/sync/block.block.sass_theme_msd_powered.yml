@@ -1,0 +1,22 @@
+uuid: 89c86953-e416-4d16-8a09-22fd36395504
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: sass_theme_msd_powered
+theme: sass_theme_msd
+region: compy_reg
+weight: -2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 73e1c437-8e2b-4a9c-9210-450d04dee880
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.third_para
+  module:
+    - text
+id: paragraph.third_para.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: third_para
+label: body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,88 @@
+// Define Colors Variables
+$white: #fff;
+$black: #000;
+$green-dark: #14573A;
+$dark-green: #092A1E;
+$gray-medium: #6C737F;
+$green-primary: #1B8354;
+$green-deep: #067647;
+$gray-lightest: #F9FAFB;
+$green-lightest: #F3FCF6;
+$leaf-green: #00A058;
+$gray-light: #D2D6DB;
+$gray-dark: #384250;
+$gray-lighter: #F3F4F6;
+$green-transparent: #166A451A;
+$gray-900: #1F2A37;
+$dark-forest: #29504D;
+$color-bg-light-green: #F7FDF9;
+$color-dark-blue: #0D121C;
+$color-dark-gray: #161616;
+
+// ---- DESIGN TOKENS (dark surface system) ----
+// Layered surfaces instead of flat #000 / #0a0a0a so sections read as distinct.
+$bg-canvas: #07090B;
+$bg-surface: #0E1116;
+$bg-raised: #151A21;
+$bg-elevated: #1C222B;
+$border-subtle: rgba(255, 255, 255, 0.07);
+$border-default: rgba(255, 255, 255, 0.11);
+$border-strong: rgba(255, 255, 255, 0.18);
+
+$text-primary: #F2F5F7;
+$text-secondary: rgba(242, 245, 247, 0.72);
+$text-muted: rgba(242, 245, 247, 0.52);
+$text-faint: rgba(242, 245, 247, 0.34);
+
+$accent: $green-primary;
+$accent-hover: $green-deep;
+$accent-soft: rgba(27, 131, 84, 0.14);
+$accent-ring: rgba(27, 131, 84, 0.35);
+
+// ---- RADII ----
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 18px;
+$radius-xl: 26px;
+$radius-pill: 999px;
+
+// ---- SHADOWS ----
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+$shadow-md: 0 12px 32px rgba(0, 0, 0, 0.38);
+$shadow-lg: 0 28px 64px rgba(0, 0, 0, 0.5);
+$shadow-accent: 0 14px 38px rgba(27, 131, 84, 0.3);
+
+// ---- EASING ----
+$ease: cubic-bezier(0.4, 0, 0.2, 1);
+$ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+
+// Define Spacing Variables
+$space-1: 1px;
+$space-2: 2px;
+$space-3: 3px;
+$space-4: 4px;
+$space-5: 5px;
+$space-6: 6px;
+$space-7: 7px;
+$space-8: 8px;
+$space-10: 10px;
+$space-12: 12px;
+$space-15: 15px;
+$space-16: 16px;
+$space-18: 18px;
+$space-20: 20px;
+$space-22: 22px;
+$space-24: 24px;
+$space-25: 25px;
+$space-28: 28px;
+$space-30: 30px;
+$space-32: 32px;
+$space-40: 40px;
+$space-45: 45px;
+$space-50: 50px;
+$space-54: 54px;
+$space-71: 71px;
+$space-73: 73px;
+$space-80: 80px;
+$space-96: 96px;

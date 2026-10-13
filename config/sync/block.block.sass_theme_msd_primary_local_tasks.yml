@@ -1,0 +1,22 @@
+uuid: 7f07e352-bdb8-4519-9a0f-c63cbb7766d0
+langcode: en
+status: false
+dependencies:
+  theme:
+    - sass_theme_msd
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: sass_theme_msd_primary_local_tasks
+theme: sass_theme_msd
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

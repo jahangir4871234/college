@@ -1,0 +1,22 @@
+uuid: 28e6cd5e-23c3-43be-9da5-dee5d2f88880
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.third_para.field_body
+    - paragraphs.paragraphs_type.third_para
+  module:
+    - text
+id: paragraph.third_para.default
+targetEntityType: paragraph
+bundle: third_para
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
