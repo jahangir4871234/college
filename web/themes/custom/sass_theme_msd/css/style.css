@@ -2010,6 +2010,13 @@ a {
   border-radius: 12px;
 }
 
+.fourth {
+  padding: 24px;
+  background: #151A21;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+}
+
 .home-content__main,
 .layout-main {
   min-width: 0;
